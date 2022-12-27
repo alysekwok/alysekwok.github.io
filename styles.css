@@ -7,6 +7,7 @@ h1 {
 
 h2, h4 {
     font-weight: normal;
+    font-style: italic;
 }
 
 h3 {
@@ -16,8 +17,12 @@ h3 {
 
 }
 
-p {
+p, li {
     font-family: "Monaco";
+}
+
+a {
+    font-style: italic;
 }
 
 .top-nav {
@@ -52,6 +57,7 @@ p {
     justify-content: center;
     align-items: center;
     padding-bottom: 3em;
+    
 
 }
 
@@ -59,36 +65,59 @@ p {
     font-size: 30px;
 }
 
-.education {
+.education-body {
     display: flex;
-    text-align: left;
     justify-content: center;
     align-items: flex-end;
-    padding-bottom: 5em;
+    border: 1px dotted black;
+    padding: 20px;
+    border-radius: 25px;
+    width: fit-content;
+    margin: auto;
     
 }
 
 
-
-
-.work-experience {
+.resume-item {
     display: flex;
+    flex-direction:column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    border: 1px dotted black;
+    padding: 20px;
+    border-radius: 25px;
+    width:fit-content;
+    margin: auto;
    
-    
 }
 
-.blink {
-    animation: blink 1.1s linear infinite alternate;
+.experience-items {
+    display: flex;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
 
-  }
-  
-  @keyframes blink {
-    from {opacity: 1;}
-    20% {opacity: 1;}
-    28% {opacity: 0;}
-    72% {opacity: 0;}
-    80% {opacity: 1;}
-    to {opacity: 1;}
-  }
+}
+
+.activities-body {
+    display: flex;
+   
+
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* .activities {
+    display: flex;
+    justify-content: center;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+} */
